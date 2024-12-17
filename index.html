@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Toggle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Click to Change Layout</h1>
+    <div class="button-container">
+      <button onclick="changeLayout('block')">Block</button>
+      <button onclick="changeLayout('inline')">Inline</button>
+      <button onclick="changeLayout('grid')">Grid</button>
+      <button onclick="changeLayout('flex-col')">Flex Column</button>
+      <button onclick="changeLayout('flex-row')">Flex Row</button>
+    </div>
+    
+    <div id="layoutBox" class="layout-box">
+      <div class="box">Item 1</div>
+      <div class="box">Item 2</div>
+      <div class="box">Item 3</div>
+    </div>
+    
+    <div id="codeDisplay">
+      <p><strong>CSS Code:</strong></p>
+      <pre id="cssCode"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
