@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Layout</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="container">
@@ -19,7 +21,7 @@
       <button onclick="changeLayout('flex-row')">Flex Row</button>
       <button onclick="changeLayout('flex-center')">Flex Centered</button>
     </div>
-    
+
     <div id="layoutBox" class="layout-box">
       <div class="box">Item 1</div>
       <div class="box">Item 2</div>
@@ -27,11 +29,11 @@
       <div class="box">Item 4</div>
       <div class="box">Item 5</div>
     </div>
-    
+
     <div id="controls">
       <h3>Modify CSS Properties:</h3>
       <div id="flexDirectionControl" class="control" style="display:none;">
-        <label for="flexDirection"  style="display:none;">Flex Direction:</label>
+        <label for="flexDirection" style="display:none;">Flex Direction:</label>
         <select id="flexDirection" onchange="updateCSS()" style="display:none;">
           <option value="row">Row</option>
           <option value="column">Column</option>
@@ -53,6 +55,13 @@
     </div>
   </div>
 
+  <footer
+    style="position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); display: flex; flex-direction: row; gap:10px; padding-bottom: 1em;">
+    <button onclick="window.location.href = 'https://github.com/userkace/'">GitHub</button>
+    <button onclick="window.location.href = 'https://github.com/userkace/css-layout'">Repository</button>
+  </footer>
+
   <script src="script.js"></script>
 </body>
+
 </html>
